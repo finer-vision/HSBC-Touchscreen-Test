@@ -4,8 +4,8 @@ Test web app for HSBC touchscreen.
 
 ### Installation
 
-1. Download the [latest release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/v0.0.0)
-2. Unzip `hsbc-touchscreen-test.zip`
+1. Download the [latest release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/download/v0.0.0/release.zip)
+2. Unzip `release.zip`
 3. Open `index.html` in Google Chrome browser
 
 ### Contributing Software Requirements
@@ -31,7 +31,7 @@ npm install
 npm run build # generates a build directory with an index.html file inside it
 
 # Generate release zip
-zip -r hsbc-touchscreen-test.zip build
+zip -r release.zip release
 ```
 
-[Create a new Release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/new) and attach `hsbc-touchscreen-test.zip`.
+[Create a new Release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/new) and attach `release.zip`.

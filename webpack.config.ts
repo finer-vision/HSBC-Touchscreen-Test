@@ -9,7 +9,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const DEV_MODE = process.env.NODE_ENV === "development";
 const SRC_DIR = path.resolve(__dirname, "src");
 const PUBLIC_DIR = path.resolve(__dirname, "public");
-const BUILD_DIR = path.resolve(__dirname, "build");
+const RELEASE_DIR = path.resolve(__dirname, "release");
 
 const config = {
   mode: DEV_MODE ? "development" : "production",
@@ -77,7 +77,7 @@ const config = {
       patterns: [
         {
           from: PUBLIC_DIR,
-          to: BUILD_DIR,
+          to: RELEASE_DIR,
           globOptions: {
             ignore: [path.join(PUBLIC_DIR, "index.html")],
           },
@@ -95,7 +95,7 @@ const config = {
   output: {
     filename: "[name].[contenthash:8].js",
     chunkFilename: "[name].[contenthash:8].chunk.js",
-    path: BUILD_DIR,
+    path: RELEASE_DIR,
     clean: true,
     publicPath: "",
   },
