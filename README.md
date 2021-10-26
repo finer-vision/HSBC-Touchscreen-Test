@@ -28,7 +28,7 @@ npm start # localhost:8080
 ```shell
 cp env.example.ts env.ts
 npm install
-npm run build # generates a build directory with an index.html file inside it
+npm run build # generates a release directory with an index.html file inside it
 
 # Generate release zip
 zip -r release.zip release
