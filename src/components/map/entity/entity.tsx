@@ -100,7 +100,7 @@ export default function Entity({ id, size, x, y, onOpen, index = 0 }: Props) {
         src={asset(`/assets/entities/${id}.svg`)}
         alt=""
         style={{
-          width: `${size}vw`,
+          width: `${size}%`,
           height: "auto",
           left: `${x}%`,
           transform: `translate(${position.x}%, ${position.y}%)`,
