@@ -62,5 +62,6 @@ export default createGlobalStyle`
     font-family: ${vars.fontBody};
     font-weight: normal;
     line-height: 1em;
+    background-color: #1e1e1e;
   }
 `;

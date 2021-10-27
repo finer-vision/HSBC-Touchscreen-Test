@@ -7,13 +7,13 @@ export const Logo = styled.img`
 
 export const Wrapper = styled.footer`
   width: 100%;
-  background-color: white;
   padding: 2em;
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-template-rows: 1fr;
   place-content: space-between;
   place-items: self-end;
+  background-color: #ffffff;
 
   h3 {
     font-size: 2em;
