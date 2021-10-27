@@ -4,7 +4,7 @@ Test web app for HSBC touchscreen.
 
 ### Installation
 
-1. Download the [latest release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/download/v0.0.0/release.zip)
+1. Download the [latest release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/download/v0.0.1/release.zip)
 2. Unzip `release.zip`
 3. Open `index.html` in Google Chrome browser
 
