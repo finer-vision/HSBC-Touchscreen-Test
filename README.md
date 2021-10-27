@@ -31,4 +31,6 @@ npm install
 npm run release # generates a release.zip file
 ```
 
+> Make sure you set the env.ts values to production ones before running the `release` command.
+
 [Create a new Release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/new) and attach `release.zip`.
