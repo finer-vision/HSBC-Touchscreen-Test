@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Background } from "./styles";
+import { Wrapper, Sea, Continents } from "./styles";
 import entities from "./entities";
 import { EntityType } from "./types";
 import Entity from "./entity/entity";
@@ -16,7 +16,8 @@ export default function Map() {
 
   return (
     <Wrapper data-id="map">
-      <Background />
+      <Sea />
+      <Continents />
       {entities.map((entity, index) => {
         return (
           <Entity
