@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Wrapper, Image, Video } from "./styles";
 
 export default function Dashboard() {
   return (
-    <main>
-      <header>
-        <h1>Dashboard</h1>
-      </header>
-      <Link to="/info">Info</Link>
-    </main>
+    <Wrapper>
+      <Image src="/assets/images/test.jpg" alt="" />
+      <Video src="/assets/videos/test.mp4" autoPlay muted />
+    </Wrapper>
   );
 }
