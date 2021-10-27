@@ -5,31 +5,29 @@ const OPEN_TRANSITION = {
   ease: "ease",
 };
 
-const CLOSE_SIZE = 1.5;
-const CONTAINER_PADDING = {
-  x: 1.5,
-  y: 1,
-};
-
 export const Container = styled.div`
+  position: relative;
+  max-width: 75%;
   background-color: #ffffff;
-  padding: ${CONTAINER_PADDING.y}em ${CONTAINER_PADDING.x}em;
+  padding-bottom: 0;
   position: relative;
   opacity: 0;
-  transition: opacity calc(${OPEN_TRANSITION.time} * 0.5) ${OPEN_TRANSITION.ease};
+  transition: opacity calc(${OPEN_TRANSITION.time} * 0.5)
+    ${OPEN_TRANSITION.ease};
+  isolation: isolate;
 `;
 
-export const Content = styled.div`
-  background-color: #ffffff;
-  margin-top: ${CLOSE_SIZE + CONTAINER_PADDING.y * 0.5}em;
-`;
+export const Content = styled.div``;
 
 export const Close = styled.div`
-  color: #000000;
   position: absolute;
-  font-size: ${CLOSE_SIZE}em;
-  top: ${CONTAINER_PADDING.y}rem;
-  right: ${CONTAINER_PADDING.x}rem;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  padding: 0.35em;
+  background: red;
+  z-index: 5;
 `;
 
 type WrapperProps = {

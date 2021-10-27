@@ -11,7 +11,9 @@ export default function Modal({ open, onClose, children }: Props) {
   return (
     <Wrapper open={open}>
       <Container>
-        <Close onPointerDown={onClose}>&times;</Close>
+        <Close onPointerDown={onClose}>
+          <img src="/assets/icons/close.svg" />
+        </Close>
         <Content>{children}</Content>
       </Container>
     </Wrapper>
