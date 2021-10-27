@@ -6,7 +6,13 @@ import Entity from "./entity/entity";
 import Modal from "./modal/modal";
 
 export default function Map() {
+  const [modelOpen, setModelOpen] = React.useState(false);
   const [openEntity, setOpenEntity] = React.useState<EntityType>(null);
+
+  const onOpen = React.useCallback((entity: EntityType) => {
+    setOpenEntity(entity);
+    setModelOpen(true);
+  }, []);
 
   return (
     <Wrapper data-id="map">
@@ -16,13 +22,13 @@ export default function Map() {
           <Entity
             {...entity}
             key={entity.id}
-            onOpen={() => setOpenEntity(entity)}
+            onOpen={() => onOpen(entity)}
             index={index}
           />
         );
       })}
 
-      <Modal open={openEntity !== null} onClose={() => setOpenEntity(null)}>
+      <Modal open={modelOpen} onClose={() => setModelOpen(false)}>
         <div>{JSON.stringify(openEntity)}</div>
       </Modal>
     </Wrapper>

@@ -8,11 +8,8 @@ type Props = {
 };
 
 export default function Modal({ open, onClose, children }: Props) {
-  // @todo transition
-  if (!open) return null;
-
   return (
-    <Wrapper>
+    <Wrapper open={open}>
       <Container>
         <Close onPointerDown={onClose}>&times;</Close>
         <Content>{children}</Content>
