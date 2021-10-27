@@ -3,12 +3,14 @@ import { Wrapper } from "./styles";
 import { EntityType } from "../types";
 import { asset, clamp, map } from "../../../utils";
 import config from "../../../config";
+import entities from "../entities";
 
 type Props = EntityType & {
   onOpen: (...args: any[]) => void;
+  index?: number;
 };
 
-export default function Entity({ id, size, x, y, onOpen }: Props) {
+export default function Entity({ id, size, x, y, onOpen, index = 0 }: Props) {
   const position = React.useMemo(() => {
     return {
       x: map(x, 0, 100, 0, -100),
@@ -71,6 +73,24 @@ export default function Entity({ id, size, x, y, onOpen }: Props) {
     };
   }, [id, movable]);
 
+  React.useLayoutEffect(() => {
+    const nextFrames: number[] = [];
+    function init() {
+      nextFrames.push(
+        requestAnimationFrame(() => {
+          imgRef.current.style.top = `${y}%`;
+          imgRef.current.style.transform = `translate(${position.x}%, ${position.y}%)`;
+        })
+      );
+    }
+    nextFrames.push(requestAnimationFrame(init));
+    return () => {
+      nextFrames.forEach((nextFrame) => {
+        cancelAnimationFrame(nextFrame);
+      });
+    };
+  }, [position]);
+
   return (
     <Wrapper onPointerDown={onOpen}>
       <img
@@ -82,8 +102,9 @@ export default function Entity({ id, size, x, y, onOpen }: Props) {
           width: `${size}vw`,
           height: "auto",
           left: `${x}%`,
-          top: `${y}%`,
           transform: `translate(${position.x}%, ${position.y}%)`,
+          transition: movable ? "none" : undefined,
+          transitionDelay: `calc(var(--time) * ${index / entities.length})`,
         }}
       />
     </Wrapper>

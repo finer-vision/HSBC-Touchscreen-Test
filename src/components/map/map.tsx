@@ -11,12 +11,13 @@ export default function Map() {
   return (
     <Wrapper data-id="map">
       <Background />
-      {entities.map((entity) => {
+      {entities.map((entity, index) => {
         return (
           <Entity
             {...entity}
             key={entity.id}
             onOpen={() => setOpenEntity(entity)}
+            index={index}
           />
         );
       })}
