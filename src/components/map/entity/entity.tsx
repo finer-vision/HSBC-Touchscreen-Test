@@ -60,6 +60,7 @@ export default function Entity({ id, size, x, y, onOpen, index = 0 }: Props) {
         x: map(x, 0, 100, 0, -100),
         y: map(y, 0, 100, 0, -100),
       };
+      imgRef.current.style.transition = "none";
       imgRef.current.style.left = `${x}%`;
       imgRef.current.style.top = `${y}%`;
       imgRef.current.style.transform = `translate(${position.x}%, ${position.y}%)`;
@@ -103,7 +104,6 @@ export default function Entity({ id, size, x, y, onOpen, index = 0 }: Props) {
           height: "auto",
           left: `${x}%`,
           transform: `translate(${position.x}%, ${position.y}%)`,
-          transition: movable ? "none" : undefined,
           transitionDelay: `calc(var(--time) * ${index / entities.length})`,
         }}
       />
