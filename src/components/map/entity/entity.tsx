@@ -5,10 +5,10 @@ import { asset, clamp, map } from "../../../utils";
 import config from "../../../config";
 
 type Props = EntityType & {
-  //
+  onOpen: (...args: any[]) => void;
 };
 
-export default function Entity({ id, size, x, y }: Props) {
+export default function Entity({ id, size, x, y, onOpen }: Props) {
   const position = React.useMemo(() => {
     return {
       x: map(x, 0, 100, 0, -100),
@@ -19,17 +19,23 @@ export default function Entity({ id, size, x, y }: Props) {
   const [movable, setMovable] = React.useState(false);
 
   const imgRef = React.useRef<HTMLImageElement>();
+  const movableIdRef = React.useRef<string>("");
 
   const onPointerDown = React.useCallback(
     (event: React.PointerEvent<HTMLImageElement>) => {
       event.preventDefault();
+      movableIdRef.current = id;
       setMovable(true);
     },
-    []
+    [id]
   );
 
   React.useEffect(() => {
+    let container: HTMLElement = null;
+
     function onPointerUp() {
+      if (movableIdRef.current !== id) return;
+      container = null;
       setMovable(false);
       console.log({
         id,
@@ -40,11 +46,12 @@ export default function Entity({ id, size, x, y }: Props) {
 
     function onPointerMove(event: PointerEvent) {
       if (!config.debug || !movable) return;
+      if (movableIdRef.current !== id) return;
+      if (container === null) {
+        container = (event.target as HTMLElement).closest(`[data-id="map"]`);
+      }
+      if (container === null) return;
       const { pageX, pageY } = event;
-      const container = (event.target as HTMLElement).closest(
-        `[data-id="map"]`
-      );
-      if (!container) return;
       const x = clamp((pageX / container.clientWidth) * 100, 0, 100);
       const y = clamp((pageY / container.clientHeight) * 100, 0, 100);
       const position = {
@@ -65,7 +72,7 @@ export default function Entity({ id, size, x, y }: Props) {
   }, [id, movable]);
 
   return (
-    <Wrapper>
+    <Wrapper onPointerDown={onOpen}>
       <img
         ref={imgRef}
         onPointerDown={onPointerDown}
