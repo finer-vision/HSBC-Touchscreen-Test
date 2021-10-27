@@ -24,4 +24,16 @@ export const Background = styled.div`
   background-repeat: no-repeat;
   background-position: 35% 50%;
   background-size: 120% auto;
+  transform: scaleY(0);
+  animation: scale 1s ease-out forwards;
+
+  @keyframes scale {
+    0% {
+      transform: scaleY(0);
+    }
+
+    100% {
+      transform: scaleY(1);
+    }
+  }
 `;
