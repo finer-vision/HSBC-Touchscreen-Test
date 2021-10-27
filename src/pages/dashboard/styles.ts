@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import config from "../../config";
 
 export const Wrapper = styled.main`
-  width: 1080px;
-  height: 860px;
+  width: ${config.width}px;
+  height: ${config.height}px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

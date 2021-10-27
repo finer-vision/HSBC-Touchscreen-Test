@@ -64,4 +64,8 @@ export default createGlobalStyle`
     line-height: 1em;
     background-color: #1e1e1e;
   }
+
+  img {
+    display: block;
+  }
 `;
