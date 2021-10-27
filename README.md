@@ -28,10 +28,7 @@ npm start # localhost:8080
 ```shell
 cp env.example.ts env.ts
 npm install
-npm run build # generates a release directory with an index.html file inside it
-
-# Generate release zip
-zip -r release.zip release
+npm run release # generates a release.zip file
 ```
 
 [Create a new Release](https://github.com/finer-vision/HSBC-Touchscreen-Test/releases/new) and attach `release.zip`.
