@@ -1,12 +1,5 @@
 import * as React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  position: absolute;
-  top: 48%;
-  left: 20%;
-  width: 8.5%;
-`;
+import { Container } from "./styles";
 
 interface Props {}
 
