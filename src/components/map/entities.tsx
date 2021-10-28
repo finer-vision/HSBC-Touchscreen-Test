@@ -40,7 +40,7 @@ const entities: EntityType[] = [
       component: EntityComponentType.basic,
       props: {
         title: `USA`,
-        svg: "/assets/entities/mexico.svg",
+        svg: "/assets/entities/pacific_ocean.svg",
         contentAlign: "right",
         color: "red_2",
         description: (
