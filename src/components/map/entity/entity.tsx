@@ -117,7 +117,9 @@ export default function Entity({
           height: "auto",
           left: `${x}%`,
           transform: `translate(${position.x}%, ${position.y}%)`,
-          transitionDelay: `calc(var(--time) * ${index / entities.length})`,
+          transitionDelay: `calc(var(--time) * ${
+            index / entities.length + Math.random() * 3
+          })`,
         }}
       />
     </Wrapper>
