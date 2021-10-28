@@ -14,7 +14,7 @@ const entities: EntityType[] = [
         title: `USA`,
         svg: "/assets/entities/pacific_ocean.svg",
         contentAlign: "right",
-        color: "red",
+        color: "red_2",
         description: (
           <>
             <p>
@@ -42,7 +42,7 @@ const entities: EntityType[] = [
         title: `USA`,
         svg: "/assets/entities/mexico.svg",
         contentAlign: "right",
-        color: "red",
+        color: "red_2",
         description: (
           <>
             <p>
@@ -70,7 +70,7 @@ const entities: EntityType[] = [
         title: `Mexico`,
         svg: "/assets/entities/mexico.svg",
         contentAlign: "left",
-        color: "darkRed",
+        color: "red_1",
         description: (
           <>
             <p>
@@ -149,7 +149,7 @@ const entities: EntityType[] = [
         svg: "/assets/entities/uk_crop.svg",
         svgLrg: true,
         contentAlign: "left",
-        color: "darkRed",
+        color: "red_1",
         description: (
           <>
             <p>
@@ -207,7 +207,7 @@ const entities: EntityType[] = [
         title: `Greece`,
         svg: "/assets/entities/greece.svg",
         contentAlign: "right",
-        color: "red",
+        color: "red_2",
         description: (
           <>
             <p>
@@ -238,7 +238,7 @@ const entities: EntityType[] = [
         title: `UAE`,
         svg: "/assets/entities/uae.svg",
         contentAlign: "right",
-        color: "darkRed",
+        color: "red_3",
         description: (
           <>
             <p>
@@ -268,7 +268,7 @@ const entities: EntityType[] = [
         title: `India`,
         svg: "/assets/entities/india.svg",
         contentAlign: "left",
-        color: "red",
+        color: "red_2",
         description: (
           <>
             <p>
@@ -296,7 +296,7 @@ const entities: EntityType[] = [
         title: `Bangladesh`,
         svg: "/assets/entities/bangladesh.svg",
         contentAlign: "left",
-        color: "darkRed",
+        color: "red_1",
         description: (
           <>
             <p>
@@ -381,7 +381,7 @@ const entities: EntityType[] = [
         title: `Singapore`,
         svg: "/assets/entities/singapore.svg",
         contentAlign: "left",
-        color: "red",
+        color: "red_3",
         description: (
           <>
             <p>
@@ -439,7 +439,7 @@ const entities: EntityType[] = [
         title: `Hong Kong`,
         svg: "/assets/entities/hong_kong.svg",
         contentAlign: "left",
-        color: "darkRed",
+        color: "red_1",
         description: (
           <>
             <p>
@@ -470,7 +470,7 @@ const entities: EntityType[] = [
         title: `Vietnam`,
         svg: "/assets/entities/vietnam.svg",
         contentAlign: "right",
-        color: "red",
+        color: "red_2",
         description: (
           <>
             <p>
@@ -526,7 +526,7 @@ const entities: EntityType[] = [
         title: `Taiwan`,
         svg: "/assets/entities/pacific_ocean.svg",
         contentAlign: "right",
-        color: "red",
+        color: "red_2",
         description: (
           <>
             <p>
@@ -556,7 +556,7 @@ const entities: EntityType[] = [
         title: `Australia`,
         svg: "/assets/entities/australia.svg",
         contentAlign: "right",
-        color: "red",
+        color: "red_3",
         description: (
           <>
             <p>

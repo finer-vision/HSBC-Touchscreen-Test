@@ -59,6 +59,6 @@ export const CloseElement = styled.div<{ align: "left" | "right" }>`
   width: 2em;
   height: 2em;
   padding: 0.35em;
-  background: ${(p) => vars.colors[p.align === "left" ? "white" : "red"]};
+  background: ${(p) => vars.colors[p.align === "left" ? "white" : "red_2"]};
   z-index: 5;
 `;
