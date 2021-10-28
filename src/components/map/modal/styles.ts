@@ -52,13 +52,16 @@ export const Wrapper = styled.div<WrapperProps>`
   }}
 `;
 
-export const CloseElement = styled.div<{ align: "left" | "right" }>`
+export const CloseElement = styled.div<{ align: "left" | "right" | "left-2" }>`
   position: absolute;
   top: 0;
   right: 0;
   width: 2em;
   height: 2em;
   padding: 0.35em;
-  background: ${(p) => vars.colors[p.align === "left" ? "white" : "red_2"]};
+  background: ${(p) =>
+    vars.colors[
+      p.align === "left" ? "white" : p.align === "left-2" ? "red_3" : "red_2"
+    ]};
   z-index: 5;
 `;

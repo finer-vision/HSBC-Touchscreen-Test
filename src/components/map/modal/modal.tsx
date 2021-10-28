@@ -4,7 +4,7 @@ import Close from "./close";
 
 /** context */
 interface IState {
-  contentAlign: "left" | "right";
+  contentAlign: "left" | "right" | "left-2";
 }
 interface IContext {
   state: IState;

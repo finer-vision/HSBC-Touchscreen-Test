@@ -76,6 +76,7 @@ export const Container = styled.div<IContainerAttrs>`
     grid-area: content;
     min-height: 15em;
     font-size: 0.75em;
+    font-weight: 300;
     line-height: 1.5;
     padding-right: 2em;
   }

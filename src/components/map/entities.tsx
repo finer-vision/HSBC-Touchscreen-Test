@@ -128,7 +128,7 @@ const entities: EntityType[] = [
         title: `UK`,
         svg: "/assets/entities/uk_crop.svg",
         svgLrg: true,
-        contentAlign: "left",
+        contentAlign: "left-2",
         color: "red_1",
         description: (
           <>
