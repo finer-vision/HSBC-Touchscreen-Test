@@ -2,6 +2,7 @@ import styled from "styled-components";
 import vars from "../../styles/vars";
 
 export const Logo = styled.img`
+  align-self: center;
   height: 2em;
 `;
 
