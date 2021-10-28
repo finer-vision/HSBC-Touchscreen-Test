@@ -6,6 +6,7 @@ import Entity from "./entity/entity";
 import Modal from "./modal/modal";
 import Basic from "./entity/components/basic";
 import Prompt from "./prompt/Prompt";
+import Compass from "./compass/Compass";
 
 export default function Map() {
   const [modelOpen, setModelOpen] = React.useState(false);
@@ -56,6 +57,7 @@ export default function Map() {
         );
       })}
 
+      <Compass />
       <Prompt />
 
       <Modal open={modelOpen} onClose={() => setModelOpen(false)}>

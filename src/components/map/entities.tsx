@@ -118,26 +118,6 @@ const entities: EntityType[] = [
     },
   },
   {
-    id: `compass`,
-    x: 22.6097,
-    y: 50.1827,
-    size: 8.5,
-    modal: {
-      component: EntityComponentType.basic,
-      props: {
-        title: `Example Title`,
-        svg: "/assets/entities/compass.svg",
-        contentAlign: "right",
-        color: "red",
-        description: (
-          <>
-            <p>Example description...</p>
-          </>
-        ),
-      },
-    },
-  },
-  {
     id: `uk`,
     x: 54.2958,
     y: 17.6608,
