@@ -1,4 +1,5 @@
-import React from "react";
+import * as React from "react";
+import { ModalStyleCtx } from "../../modal/modal";
 import { Container } from "./styles";
 
 type Props = {
@@ -18,6 +19,9 @@ export default function Basic({
   contentAlign,
   color,
 }: Props) {
+  const { setState } = React.useContext(ModalStyleCtx);
+  React.useEffect(() => setState({ contentAlign }), [contentAlign]);
+
   return (
     <Container contentAlign={contentAlign} color={color} svgLrg={svgLrg}>
       <h3>{title}</h3>

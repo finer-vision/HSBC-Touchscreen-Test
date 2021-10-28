@@ -5,6 +5,7 @@ interface IVars {
   fontBody: string;
   colors: {
     black: string;
+    white: string;
     [key: string]: string;
   };
 }
@@ -16,6 +17,7 @@ const vars: IVars = {
   fontBody: `"Univers Next for HSBC", Arial, sans-serif`,
   colors: {
     black: `#000`,
+    white: `#fff`,
     green: `#6bc79c`,
     red: `red`,
     darkRed: `crimson`,

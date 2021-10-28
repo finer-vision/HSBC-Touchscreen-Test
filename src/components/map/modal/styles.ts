@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import vars from "../../../styles/vars";
 
 const OPEN_TRANSITION = {
   time: "1s",
@@ -19,17 +20,6 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div``;
-
-export const Close = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 2em;
-  height: 2em;
-  padding: 0.35em;
-  background: red;
-  z-index: 5;
-`;
 
 type WrapperProps = {
   open: boolean;
@@ -60,4 +50,15 @@ export const Wrapper = styled.div<WrapperProps>`
       `;
     }
   }}
+`;
+
+export const CloseElement = styled.div<{ align: "left" | "right" }>`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  padding: 0.35em;
+  background: ${(p) => vars.colors[p.align === "left" ? "white" : "red"]};
+  z-index: 5;
 `;
