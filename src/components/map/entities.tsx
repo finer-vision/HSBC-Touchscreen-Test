@@ -238,7 +238,7 @@ const entities: EntityType[] = [
         title: `UAE`,
         svg: "/assets/entities/uae.svg",
         contentAlign: "right",
-        color: "red_3",
+        color: "red_1",
         description: (
           <>
             <p>
@@ -439,7 +439,7 @@ const entities: EntityType[] = [
         title: `Hong Kong`,
         svg: "/assets/entities/hong_kong.svg",
         contentAlign: "left",
-        color: "red_1",
+        color: "red_2",
         description: (
           <>
             <p>
@@ -526,7 +526,7 @@ const entities: EntityType[] = [
         title: `Taiwan`,
         svg: "/assets/entities/pacific_ocean.svg",
         contentAlign: "right",
-        color: "red_2",
+        color: "red_3",
         description: (
           <>
             <p>

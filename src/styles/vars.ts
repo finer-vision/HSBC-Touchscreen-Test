@@ -19,9 +19,9 @@ const vars: IVars = {
     black: `#000`,
     white: `#fff`,
     green: `#6bc79c`,
-    red_1: `#98261e`,
-    red_2: `#c82a23`,
-    red_3: `#e93b35`,
+    red_1: `#620f1d`,
+    red_2: `#b63632`,
+    red_3: `#e93b36`,
     darkRed: `crimson`,
   },
 };

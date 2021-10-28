@@ -51,7 +51,7 @@ export const Container = styled.div<IContainerAttrs>`
   grid-template-rows: auto 1fr;
   gap: 2em;
   ${(p) => handleContentAlign(p.contentAlign)};
-  padding: ${CONTAINER_PADDING.y}em ${CONTAINER_PADDING.x}em;
+  padding: 0 ${CONTAINER_PADDING.y}em 0 ${CONTAINER_PADDING.y * 2}em;
   padding-top: ${CLOSE_SIZE + CONTAINER_PADDING.y * 0.5}em;
 
   &:after {
@@ -61,7 +61,7 @@ export const Container = styled.div<IContainerAttrs>`
     width: 50%;
     height: 100%;
     background: ${({ color }) => vars.colors[color || "black"]};
-    clip-path: polygon(0 0, 60% 0, 100% 40%, 60% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 100% 40%, 50% 100%, 0 100%);
     z-index: -1;
     ${(p) => handleChevronAlign(p.contentAlign)};
   }
@@ -74,17 +74,18 @@ export const Container = styled.div<IContainerAttrs>`
 
   .content {
     grid-area: content;
-    min-height: 24vh;
+    min-height: 15em;
     font-size: 0.75em;
     line-height: 1.5;
+    padding-right: 2em;
   }
 
   img {
     grid-area: svg;
     justify-self: center;
-    align-self: flex-end;
-    height: 100%;
-    max-height: 30vh;
+    align-self: flex-start;
+    height: 110%;
+    max-height: 16em;
     max-width: 100%;
 
     ${({ svgLrg }) =>
