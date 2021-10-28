@@ -9,6 +9,9 @@ import Basic from "./entity/components/basic";
 export default function Map() {
   const [modelOpen, setModelOpen] = React.useState(false);
   const [openEntity, setOpenEntity] = React.useState<EntityType>(null);
+  const [idleBounce, setIdleBounce] = React.useState(0);
+  const increment = React.useRef(null);
+  const IDLE_BOUNCE_DELAY_SECONDS = 15;
 
   const EntityComponent = React.useMemo(() => {
     switch (openEntity?.modal?.component) {
@@ -18,6 +21,18 @@ export default function Map() {
         return React.Fragment;
     }
   }, [openEntity]);
+
+  React.useEffect(() => {
+    if (modelOpen) {
+      return () => clearInterval(increment.current);
+    } else {
+      const interval = setInterval(() => {
+        setIdleBounce((prev) => (prev === entities.length - 1 ? 0 : prev + 1));
+      }, IDLE_BOUNCE_DELAY_SECONDS * 1000);
+      increment.current = interval;
+    }
+    return () => clearInterval(increment.current);
+  }, [modelOpen]);
 
   const onOpen = React.useCallback((entity: EntityType) => {
     setOpenEntity(entity);
@@ -35,6 +50,7 @@ export default function Map() {
             key={entity.id}
             onOpen={() => onOpen(entity)}
             index={index}
+            bounce={idleBounce === index}
           />
         );
       })}

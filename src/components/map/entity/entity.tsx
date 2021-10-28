@@ -8,9 +8,18 @@ import entities from "../entities";
 type Props = EntityType & {
   onOpen: (...args: any[]) => void;
   index?: number;
+  bounce: boolean;
 };
 
-export default function Entity({ id, size, x, y, onOpen, index = 0 }: Props) {
+export default function Entity({
+  id,
+  size,
+  x,
+  y,
+  onOpen,
+  index = 0,
+  bounce = false,
+}: Props) {
   const position = React.useMemo(() => {
     return {
       x: map(x, 0, 100, 0, -100),
@@ -93,7 +102,7 @@ export default function Entity({ id, size, x, y, onOpen, index = 0 }: Props) {
   }, [position]);
 
   return (
-    <Wrapper onPointerDown={onOpen}>
+    <Wrapper onPointerDown={onOpen} bounce={bounce}>
       <img
         ref={imgRef}
         onPointerDown={onPointerDown}
