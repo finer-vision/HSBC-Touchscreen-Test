@@ -102,7 +102,11 @@ export default function Entity({
   }, [position]);
 
   return (
-    <Wrapper onPointerDown={onOpen} bounce={bounce}>
+    <Wrapper
+      onPointerDown={onOpen}
+      bounce={bounce}
+      transform={`translate(${position.x}%, ${position.y}%)`}
+    >
       <img
         ref={imgRef}
         onPointerDown={onPointerDown}

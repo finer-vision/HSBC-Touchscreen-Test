@@ -83,9 +83,9 @@ export const Container = styled.div<IContainerAttrs>`
     grid-area: svg;
     justify-self: center;
     align-self: flex-end;
-    height: 90%;
-    max-height: 28vh;
-    max-width: 90%;
+    height: 100%;
+    max-height: 30vh;
+    max-width: 100%;
 
     ${({ svgLrg }) =>
       svgLrg &&
