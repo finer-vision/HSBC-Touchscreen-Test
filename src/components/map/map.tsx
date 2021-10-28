@@ -1,7 +1,7 @@
 import React from "react";
 import { Continents, Sea, Wrapper } from "./styles";
-import entities from "./entities";
 import { EntityComponentType, EntityType } from "./types";
+import entities from "./entities";
 import Entity from "./entity/entity";
 import Modal from "./modal/modal";
 import Basic from "./entity/components/basic";
@@ -13,7 +13,7 @@ export default function Map() {
   const [openEntity, setOpenEntity] = React.useState<EntityType>(null);
   const [idleBounce, setIdleBounce] = React.useState(0);
   const increment = React.useRef(null);
-  const IDLE_BOUNCE_DELAY_SECONDS = 15;
+  const IDLE_BOUNCE_DELAY_SECONDS = 5;
 
   const EntityComponent = React.useMemo(() => {
     switch (openEntity?.modal?.component) {

@@ -22,5 +22,5 @@ export const Container = styled.div`
   width: 7.5%;
   transform: scale(0);
   transform-origin: center;
-  animation: ${SCALE_IN} 0.5s linear forwards 5s;
+  animation: ${SCALE_IN} 0.5s linear forwards 4s;
 `;
