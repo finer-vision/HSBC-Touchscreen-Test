@@ -15,11 +15,11 @@ export const Wrapper = styled.footer`
   background-color: #ffffff;
 
   h3 {
-    font-size: 2em;
-    font-weight: normal;
+    font-size: 1.8em;
+    font-weight: 600;
 
     small {
-      font-weight: normal;
+      font-weight: 300;
       display: block;
       font-size: 0.5em;
       margin-top: 1em;

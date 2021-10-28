@@ -22,7 +22,7 @@ export const Container = styled.div`
   left: 10%;
   bottom: 15%;
   width: ${PROMPT.WIDTH};
-  height: ${PROMPT.HEIGHT};
+  height: calc(${PROMPT.HEIGHT} + 1em);
   background: transparent;
   overflow: hidden;
 
@@ -31,12 +31,13 @@ export const Container = styled.div`
     top: 0;
     left: -${PROMPT.WIDTH};
     width: ${PROMPT.WIDTH};
-    height: ${PROMPT.HEIGHT};
+    height: calc(${PROMPT.HEIGHT} + 1em);
     padding: 0 1em;
     padding-left: ${`calc(${CHEVRON.WIDTH} + 1em)`};
     display: flex;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 0.85em;
+    font-weight: 300;
     background: white;
     animation: ${ANIMATE_IN} 0.5s ease forwards 1.5s;
   }
@@ -48,7 +49,7 @@ export const Container = styled.div`
     left: -${CHEVRON.WIDTH};
     width: ${CHEVRON.WIDTH};
     height: ${CHEVRON.HEIGHT};
-    background: ${vars.colors.red_2};
+    background: ${vars.colors.red_3};
     clip-path: polygon(0 0, 65% 0, 100% 40%, 55% 100%, 0 100%);
     animation: ${ANIMATE_IN} 0.5s ease forwards 0.5s;
   }
