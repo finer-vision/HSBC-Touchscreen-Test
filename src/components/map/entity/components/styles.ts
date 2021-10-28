@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import vars from "../../../../styles/vars";
 
 const CLOSE_SIZE = 1.5;
 const CONTAINER_PADDING = {
@@ -57,8 +58,8 @@ export const Container = styled.div<IContainerAttrs>`
     position: absolute;
     top: 0;
     width: 50%;
-    height: 80%;
-    background: ${({ color }) => color || "pink"};
+    height: 100%;
+    background: ${({ color }) => vars.colors[color || "black"]};
     clip-path: polygon(0 0, 60% 0, 100% 40%, 60% 100%, 0 100%);
     z-index: -1;
     ${(p) => handleChevronAlign(p.contentAlign)};
@@ -72,16 +73,17 @@ export const Container = styled.div<IContainerAttrs>`
 
   .content {
     grid-area: content;
+    min-height: 24vh;
     font-size: 0.75em;
     line-height: 1.5;
-    padding-bottom: ${CONTAINER_PADDING.y * 4}em;
   }
 
   img {
     grid-area: svg;
-    justify-self: flex-start;
-    align-self: center;
+    justify-self: center;
+    align-self: flex-end;
     height: 90%;
+    max-height: 28vh;
     max-width: 90%;
   }
 `;

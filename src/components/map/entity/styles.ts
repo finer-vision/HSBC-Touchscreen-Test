@@ -1,5 +1,4 @@
-import styled, { css } from "styled-components";
-import entities from "../entities";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   img {

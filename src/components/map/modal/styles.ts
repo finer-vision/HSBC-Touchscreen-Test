@@ -9,7 +9,7 @@ export const Container = styled.div`
   position: relative;
   max-width: 75%;
   background-color: #ffffff;
-  padding-bottom: 0;
+  padding-bottom: 7.5%;
   position: relative;
   opacity: 0;
   transition: opacity calc(${OPEN_TRANSITION.time} * 0.5)
