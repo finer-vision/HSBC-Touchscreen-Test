@@ -103,7 +103,7 @@ export default function Entity({
 
   return (
     <Wrapper
-      // onPointerDown={onOpen}
+      onPointerDown={onOpen}
       bounce={bounce}
       transform={`translate(${position.x}%, ${position.y}%)`}
     >
