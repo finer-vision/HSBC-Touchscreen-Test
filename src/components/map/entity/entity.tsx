@@ -70,9 +70,9 @@ export default function Entity({
         y: map(y, 0, 100, 0, -100),
       };
       imgRef.current.style.transition = "none";
-      imgRef.current.style.left = `${x}%`;
-      imgRef.current.style.top = `${y}%`;
-      imgRef.current.style.transform = `translate(${position.x}%, ${position.y}%)`;
+      // imgRef.current.style.left = `${x}%`;
+      // imgRef.current.style.top = `${y}%`;
+      // imgRef.current.style.transform = `translate(${position.x}%, ${position.y}%)`;
     }
 
     window.addEventListener("pointerup", onPointerUp);
@@ -88,8 +88,11 @@ export default function Entity({
     function init() {
       nextFrames.push(
         requestAnimationFrame(() => {
-          imgRef.current.style.top = `${y}%`;
-          imgRef.current.style.transform = `translate(${position.x}%, ${position.y}%)`;
+          // imgRef.current.style.top = `${y}%`;
+          // imgRef.current.style.transform = `translate(${position.x}%, ${position.y}%)`;
+
+          imgRef.current.style.setProperty("--x", `${position.x.toString()}%`);
+          imgRef.current.style.setProperty("--y", `${position.y.toString()}%`);
         })
       );
     }
@@ -105,7 +108,7 @@ export default function Entity({
     <Wrapper
       onPointerDown={onOpen}
       bounce={bounce}
-      transform={`translate(${position.x}%, ${position.y}%)`}
+      // transform={`translate(${position.x}%, ${position.y}%)`}
     >
       <img
         ref={imgRef}
@@ -116,10 +119,10 @@ export default function Entity({
           width: `${size}%`,
           height: "auto",
           left: `${x}%`,
-          transform: `translate(${position.x}%, ${position.y}%)`,
-          transitionDelay: `calc(var(--time) * ${
-            index / entities.length + Math.random() * 3
-          })`,
+          // transform: `translate(${position.x}%, ${position.y}%)`,
+          // transitionDelay: `calc(var(--time) * ${
+          //   index / entities.length + Math.random() * 3
+          // })`,
         }}
       />
     </Wrapper>
