@@ -10,6 +10,7 @@ const CONTAINER_PADDING = {
 interface IContainerAttrs {
   contentAlign: "right" | "left";
   color: string;
+  svgLrg: boolean;
 }
 
 const handleContentAlign = (align: string) => {
@@ -85,5 +86,15 @@ export const Container = styled.div<IContainerAttrs>`
     height: 90%;
     max-height: 28vh;
     max-width: 90%;
+
+    ${({ svgLrg }) =>
+      svgLrg &&
+      css`
+        position: absolute;
+        left: 25%;
+        bottom: -${CONTAINER_PADDING.y * 5.5}em;
+        height: 130%;
+        max-height: 200%;
+      `}
   }
 `;

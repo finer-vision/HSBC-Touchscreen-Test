@@ -15,6 +15,7 @@ export const Container = styled.div`
   transition: opacity calc(${OPEN_TRANSITION.time} * 0.5)
     ${OPEN_TRANSITION.ease};
   isolation: isolate;
+  overflow: hidden;
 `;
 
 export const Content = styled.div``;
