@@ -5,9 +5,9 @@ import { EntityComponentType, EntityType } from "./types";
 const entities: EntityType[] = [
   {
     id: `pacific_ocean`,
-    x: 10.527716742621527,
-    y: 15.446997748480904,
-    size: 11,
+    x: 10.7943,
+    y: 22.7489,
+    size: 9,
     modal: {
       component: EntityComponentType.basic,
       props: {
@@ -33,9 +33,9 @@ const entities: EntityType[] = [
   },
   {
     id: `us`,
-    x: 17.8444,
-    y: 28.7597,
-    size: 10.5,
+    x: 18.8118,
+    y: 30.5605,
+    size: 9,
     modal: {
       component: EntityComponentType.basic,
       props: {
@@ -61,9 +61,9 @@ const entities: EntityType[] = [
   },
   {
     id: `mexico`,
-    x: 3.42493,
-    y: 34.2451,
-    size: 10.5,
+    x: 5.0604,
+    y: 34.8833,
+    size: 9,
     modal: {
       component: EntityComponentType.basic,
       props: {
@@ -90,8 +90,8 @@ const entities: EntityType[] = [
   },
   {
     id: `brazil`,
-    x: 6.19508,
-    y: 54.1596,
+    x: 6.48076,
+    y: 50.8235,
     size: 8.25,
     modal: {
       component: EntityComponentType.basic,
@@ -119,8 +119,8 @@ const entities: EntityType[] = [
   },
   {
     id: `uk`,
-    x: 54.2958,
-    y: 17.6608,
+    x: 54.082,
+    y: 23.5061,
     size: 1.6,
     modal: {
       component: EntityComponentType.basic,
@@ -148,8 +148,8 @@ const entities: EntityType[] = [
   },
   {
     id: `spain`,
-    x: 48.0324,
-    y: 23.2235,
+    x: 47.4653,
+    y: 28.5315,
     size: 7,
     modal: {
       component: EntityComponentType.basic,
@@ -178,8 +178,8 @@ const entities: EntityType[] = [
   },
   {
     id: `greece`,
-    x: 58.4179,
-    y: 26.8117,
+    x: 59.4582,
+    y: 31.0869,
     size: 10.5,
     modal: {
       component: EntityComponentType.basic,
@@ -211,7 +211,7 @@ const entities: EntityType[] = [
     id: `uae`,
     x: 54.032,
     y: 42.2862,
-    size: 11,
+    size: 10,
     modal: {
       component: EntityComponentType.basic,
       props: {
@@ -269,7 +269,7 @@ const entities: EntityType[] = [
     id: `bangladesh`,
     x: 71.6389,
     y: 50.3664,
-    size: 10.5,
+    size: 9,
     modal: {
       component: EntityComponentType.basic,
       props: {
@@ -294,8 +294,8 @@ const entities: EntityType[] = [
   },
   {
     id: `sri_lanka`,
-    x: 59.1649,
-    y: 62.9733,
+    x: 59.0708,
+    y: 60.8653,
     size: 9.75,
     modal: {
       component: EntityComponentType.basic,
@@ -322,8 +322,8 @@ const entities: EntityType[] = [
   },
   {
     id: `malaysia`,
-    x: 67.184,
-    y: 61.683,
+    x: 67.1983,
+    y: 59.6062,
     size: 5,
     modal: {
       component: EntityComponentType.basic,
@@ -352,8 +352,8 @@ const entities: EntityType[] = [
   },
   {
     id: `singapore`,
-    x: 65.9632,
-    y: 71.5852,
+    x: 66.0453,
+    y: 68.4647,
     size: 6.5,
     modal: {
       component: EntityComponentType.basic,
@@ -381,8 +381,8 @@ const entities: EntityType[] = [
   },
   {
     id: `indonesia`,
-    x: 75.0917,
-    y: 72.9192,
+    x: 74.9928,
+    y: 68.1164,
     size: 6.25,
     modal: {
       component: EntityComponentType.basic,
@@ -410,9 +410,9 @@ const entities: EntityType[] = [
   },
   {
     id: `hong_kong`,
-    x: 81.6174,
-    y: 61.4491,
-    size: 5.5,
+    x: 83.4379,
+    y: 58.9358,
+    size: 5,
     modal: {
       component: EntityComponentType.basic,
       props: {
@@ -469,9 +469,9 @@ const entities: EntityType[] = [
   },
   {
     id: `china`,
-    x: 87.2893,
-    y: 45.4945,
-    size: 13,
+    x: 87.8913,
+    y: 47.0621,
+    size: 11,
     modal: {
       component: EntityComponentType.basic,
       props: {
@@ -497,8 +497,8 @@ const entities: EntityType[] = [
   },
   {
     id: `pacific_ocean2`,
-    x: 87.8269,
-    y: 72.1152,
+    x: 89.3016,
+    y: 67.9728,
     size: 6.5,
     modal: {
       component: EntityComponentType.basic,
@@ -527,8 +527,8 @@ const entities: EntityType[] = [
   },
   {
     id: `australia`,
-    x: 79.3781,
-    y: 89.0022,
+    x: 79.5479,
+    y: 80.9416,
     size: 12,
     modal: {
       component: EntityComponentType.basic,

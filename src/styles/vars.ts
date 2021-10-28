@@ -3,6 +3,7 @@ interface IVars {
   responsiveMin: number;
   responsiveMax: number;
   fontBody: string;
+  footerHeight: number;
   colors: {
     black: string;
     white: string;
@@ -15,6 +16,7 @@ const vars: IVars = {
   responsiveMin: 320,
   responsiveMax: 1200,
   fontBody: `"Univers Next for HSBC", Arial, sans-serif`,
+  footerHeight: 148,
   colors: {
     black: `#000`,
     white: `#fff`,

@@ -7,7 +7,8 @@ export default function Dashboard() {
   return (
     <Wrapper>
       <Map />
-      <Footer />
+      {/* <Footer /> */}
+      {/* <div style={{ height: "158px", width: "100%" }} /> */}
     </Wrapper>
   );
 }

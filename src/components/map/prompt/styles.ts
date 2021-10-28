@@ -20,7 +20,7 @@ const ANIMATE_IN = keyframes`
 export const Container = styled.div`
   position: absolute;
   left: 10%;
-  bottom: 15%;
+  bottom: 23%;
   width: ${PROMPT.WIDTH};
   height: calc(${PROMPT.HEIGHT} + 1em);
   background: transparent;

@@ -7,6 +7,7 @@ import Modal from "./modal/modal";
 import Basic from "./entity/components/basic";
 import Prompt from "./prompt/Prompt";
 import Compass from "./compass/Compass";
+import Footer from "../footer/footer";
 
 export default function Map() {
   const [modelOpen, setModelOpen] = React.useState(false);
@@ -45,6 +46,7 @@ export default function Map() {
     <Wrapper data-id="map">
       <Sea />
       <Continents />
+      <div style={{ height: "158px", width: "100%" }} />
       {entities.map((entity, index) => {
         return (
           <Entity
@@ -65,6 +67,7 @@ export default function Map() {
         {/* @ts-ignore */}
         <EntityComponent {...(openEntity?.modal?.props ?? {})} />
       </Modal>
+      <Footer />
     </Wrapper>
   );
 }
