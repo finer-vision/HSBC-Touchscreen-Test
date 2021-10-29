@@ -380,6 +380,34 @@ const entities: EntityType[] = [
     },
   },
   {
+    id: `vietnam`,
+    x: 75.7765,
+    y: 60.2263,
+    size: 7,
+    modal: {
+      component: EntityComponentType.basic,
+      props: {
+        title: `Vietnam`,
+        svg: "/assets/entities/vietnam.svg",
+        contentAlign: "right",
+        color: "red_2",
+        description: (
+          <>
+            <p>
+              HSBC delivered a green loan to help finance the construction of
+              Vietnam’s first plastics recycling factory. Duy Tan will
+              recondition used plastic bottles for further use in packaging – a
+              step forward in Vietnam’s battle against ocean pollution. “It’s a
+              long-term journey, but we want our operations to be more
+              sustainable and we want to have a green, clean and beautiful
+              Vietnam,” says Anh Le, Vice-President at Duy Tan.
+            </p>
+          </>
+        ),
+      },
+    },
+  },
+  {
     id: `indonesia`,
     x: 74.9928,
     y: 68.1164,
@@ -433,34 +461,6 @@ const entities: EntityType[] = [
               instance, Gammon will use prefabricated modules to reduce
               construction waste, green-certified concrete and reuse treated
               marine sediment.
-            </p>
-          </>
-        ),
-      },
-    },
-  },
-  {
-    id: `vietnam`,
-    x: 75.7765,
-    y: 60.2263,
-    size: 7,
-    modal: {
-      component: EntityComponentType.basic,
-      props: {
-        title: `Vietnam`,
-        svg: "/assets/entities/vietnam.svg",
-        contentAlign: "right",
-        color: "red_2",
-        description: (
-          <>
-            <p>
-              HSBC delivered a green loan to help finance the construction of
-              Vietnam’s first plastics recycling factory. Duy Tan will
-              recondition used plastic bottles for further use in packaging – a
-              step forward in Vietnam’s battle against ocean pollution. “It’s a
-              long-term journey, but we want our operations to be more
-              sustainable and we want to have a green, clean and beautiful
-              Vietnam,” says Anh Le, Vice-President at Duy Tan.
             </p>
           </>
         ),
