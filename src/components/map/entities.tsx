@@ -475,7 +475,7 @@ const entities: EntityType[] = [
     modal: {
       component: EntityComponentType.basic,
       props: {
-        title: `China`,
+        title: `Mainland China`,
         svg: "/assets/entities/china.svg",
         contentAlign: "left",
         color: "black",
@@ -483,12 +483,12 @@ const entities: EntityType[] = [
           <>
             <p>
               HSBC led a world-first financing deal that will pay for sectors
-              including utilities and construction to reduce emissions in China
-              and beyond. We were joint global coordinator, joint lead manager
-              and joint bookrunner on Bank of China (BoC) Hong Kong Branch’s
-              climate transition bond. BoC will use the funds to finance
-              projects that support China’s goal of achieving carbon neutrality
-              before 2060.
+              including utilities and construction to reduce emissions
+              in mainland China and beyond. We were joint global coordinator,
+              joint lead manager, and joint book-runner on Bank of China (BoC)
+              Hong Kong Branch’s climate transition bond. BoC will use the funds
+              to finance projects that support the Chinese government’s goal of
+              achieving carbon neutrality before 2060.
             </p>
           </>
         ),
