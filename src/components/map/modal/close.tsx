@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ModalStyleCtx } from "./modal";
 import { CloseElement } from "./styles";
+import { asset } from "../../../utils";
 
 interface Props {
   onPointerDown: any;
@@ -17,9 +18,9 @@ const Close: React.FC<Props> = ({ onPointerDown }) => {
   return (
     <CloseElement onPointerDown={onPointerDown} align={contentAlign}>
       {contentAlign === "left" ? (
-        <img src="/assets/icons/close-red.svg" />
+        <img src={asset("/assets/icons/close-red.svg")} />
       ) : (
-        <img src="/assets/icons/close-white.svg" />
+        <img src={asset("/assets/icons/close-white.svg")} />
       )}
     </CloseElement>
   );

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ModalStyleCtx } from "../../modal/modal";
 import { Container } from "./styles";
+import { asset } from "../../../../utils";
 
 type Props = {
   title: string;
@@ -19,7 +20,6 @@ export default function Basic({
   svgLrg = false,
   contentAlign,
   color,
-  bounceWith,
 }: Props) {
   const { setState } = React.useContext(ModalStyleCtx);
   React.useEffect(() => setState({ contentAlign }), [contentAlign]);
@@ -28,7 +28,7 @@ export default function Basic({
     <Container contentAlign={contentAlign} color={color} svgLrg={svgLrg}>
       <h3>{title}</h3>
       <div className="content">{description}</div>
-      <img src={svg} />
+      <img src={asset(svg)} />
     </Container>
   );
 }
