@@ -41,6 +41,7 @@ const entities: EntityType[] = [
       props: {
         title: `USA`,
         svg: "/assets/entities/pacific_ocean.svg",
+        bounceWith: 0, // hard coded to reference previous object
         contentAlign: "right",
         color: "red_2",
         description: (
@@ -192,15 +193,14 @@ const entities: EntityType[] = [
           <>
             <p>
               HSBC took structuring and bookrunning roles as Greece’s largest
-              power producer issued a €650 million high-yield
-              sustainability-linked bond – a first for Europe. We used our
-              global reach and local expertise to attract a diverse base of
-              international and Greek investors. The bond commits Public Power
-              Corporation (PPC) to reduce its carbon emissions by 40% by the end
-              of 2022 – or face higher financing costs. PPC will end its
-              reliance on lignite – low-grade brown coal – plants over the next
-              few years, and significantly boost its solar and wind power
-              capacity.
+              power producer issued a €650 million high-yield sustainability
+              linked bond – a first for Europe. We used our global reach and
+              local expertise to attract a diverse base of international and
+              Greek investors. The bond commits Public Power Corporation (PPC)
+              to reduce its carbon emissions by 40% by the end of 2022 – or face
+              higher financing costs. PPC will end its reliance on lignite –
+              low-grade brown coal – plants over the next few years, and
+              significantly boost its solar and wind power capacity.
             </p>
           </>
         ),
@@ -335,15 +335,15 @@ const entities: EntityType[] = [
         description: (
           <>
             <p>
-              HSBC Amanah has provided Malaysia’s Guan Chong Cocoa Manufacturer
-              Sdn Bhd with our first green trade financing facility in support
-              of sustainable cocoa sourcing. Its parent company, Guan Chong
-              Berhad (GCB), is the 4th-largest cocoa grinder in the world and
-              has committed to making its cocoa supply chain sustainable by
-              supporting growers, minimising environmental impacts and producing
-              sustainable cocoa. This bespoke financing arrangement helps the
-              company to source certified cocoa beans from farms that don’t
-              contribute to cocoa-related deforestation.{" "}
+              HSBC Amanah provided Malaysia’s Guan Chong Cocoa Manufacturer Sdn
+              Bhd with our first green trade financing facility in support of
+              sustainable cocoa sourcing. Its parent company, Guan Chong Berhad,
+              is the 4th-largest cocoa grinder in the world and has committed to
+              making its cocoa supply chain sustainable by supporting growers,
+              minimising environmental impacts and producing sustainable cocoa.
+              This bespoke financing arrangement helps the company to source
+              certified cocoa beans from farms that don’t contribute to
+              cocoa-related deforestation.
             </p>
           </>
         ),
@@ -423,13 +423,13 @@ const entities: EntityType[] = [
           <>
             <p>
               HSBC supported an $800 million bridging loan for PT Pertamina
-              Geothermal Energy (PGE), for which we were mandated lead arranger
-              and contributed $140 million. The renewable energy producer is a
-              major market player focused on helping the country expand its
-              renewable energy share to 23% by 2025. Situated along the Pacific
-              Ocean’s ‘Ring of Fire’, Indonesia has the world’s largest
-              estimated geothermal production capacity and so tapping into this
-              energy source is key to the nation’s long-term energy transition.
+              Geothermal Energy, for which we were mandated lead arranger and
+              contributed $140 million. The renewable energy producer is a major
+              market player focused on helping the country expand its renewable
+              energy share to 23% by 2025. Situated along the Pacific Ocean’s
+              ‘Ring of Fire’, Indonesia has the world’s largest estimated
+              geothermal production capacity and so tapping into this energy
+              source is key to the nation’s long-term energy transition.
             </p>
           </>
         ),
@@ -451,16 +451,15 @@ const entities: EntityType[] = [
         description: (
           <>
             <p>
-              HSBC provided a HKD258 million ($33 million) green guarantee to
-              Gammon Construction Ltd in support of the sustainable expansion of
-              Hong Kong International Airport’s Terminal 2. The financing
-              arrangement commits the company to achieving a BEAM Plus Platinum
-              rating for the project – the highest environmental accreditation
-              for buildings in Hong Kong. Low-impact development encompasses
-              material selection, building practices and waste management. For
-              instance, Gammon will use prefabricated modules to reduce
-              construction waste, green-certified concrete and reuse treated
-              marine sediment.
+              HSBC provided a HK$258 million ($33 million) green guarantee to
+              Gammon Construction in support of the sustainable expansion of
+              Hong Kong International Airport’s Terminal 2. The financing
+              arrangement commits the company to achieving a BEAM Plus Platinum
+              rating for the project – the highest environmental accreditation
+              for buildings in Hong Kong. As part of its low-impact development,
+              Gammon will use prefabricated modules to reduce construction
+              waste, as well as making use of green-certified concrete and
+              treated marine sediment.
             </p>
           </>
         ),
