@@ -9,6 +9,7 @@ type Props = {
   svgLrg?: boolean;
   contentAlign: "right" | "left";
   color: string;
+  bounceWith?: number;
 };
 
 export default function Basic({
@@ -18,6 +19,7 @@ export default function Basic({
   svgLrg = false,
   contentAlign,
   color,
+  bounceWith,
 }: Props) {
   const { setState } = React.useContext(ModalStyleCtx);
   React.useEffect(() => setState({ contentAlign }), [contentAlign]);

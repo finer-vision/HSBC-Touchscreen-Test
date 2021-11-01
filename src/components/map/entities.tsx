@@ -4,38 +4,10 @@ import { EntityComponentType, EntityType } from "./types";
 
 const entities: EntityType[] = [
   {
-    id: `pacific_ocean`,
-    x: 10.7943,
-    y: 22.7489,
-    size: 9,
-    modal: {
-      component: EntityComponentType.basic,
-      props: {
-        title: `USA`,
-        svg: "/assets/entities/pacific_ocean.svg",
-        contentAlign: "right",
-        color: "red_2",
-        description: (
-          <>
-            <p>
-              HSBC delivered an innovative funding solution to enable the
-              world’s largest independent power producer to start developing
-              seven wind farms and four solar power plants in the US. In what
-              was Paris-based Engie Group’s largest overseas financing deal to
-              date, we structured a tax equity solution – a product unique to US
-              renewable energy projects that pairs the tax benefits these
-              projects are eligible for with capital financing.
-            </p>
-          </>
-        ),
-      },
-    },
-  },
-  {
-    id: `us`,
-    x: 18.8118,
-    y: 30.5605,
-    size: 9,
+    id: `usa_combined`,
+    x: 12.7271,
+    y: 26.1596,
+    size: 16,
     modal: {
       component: EntityComponentType.basic,
       props: {
